@@ -1,0 +1,49 @@
+@import 'markdown-navbar/dist/navbar.css';
+
+.blog-view {
+    font-family: sans-serif;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    .blog-container {
+        padding: 30px;
+        background: #fff;
+        margin: 20px;
+        border-radius: 5px;
+
+        .blog-title {
+            font-size: 32px;
+        }
+
+        .blog-data-items {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            color: #abb8c3;
+        }
+
+        .blog-data-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .navbar-container {
+        position: fixed;
+        background-color: #fff;
+        top: 80px;
+        right: 30px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+        transform: translate(0, 0);
+        transition: transform 500ms ease;
+        border-radius: 5px;
+        min-width: 250px;
+
+        .navbar-title {
+            margin-top: 6px;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+}

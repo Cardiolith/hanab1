@@ -1,0 +1,31 @@
+.desc {
+    background: transparent;
+    position: relative;
+    display: block;
+    width: 100%;
+
+    .desc-title {
+        position: relative;
+        padding-left: 16px;
+        margin: 30px auto 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .desc-title:before {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 4px;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom,#16BCF9 35%,#33CCFF 100%) left center no-repeat;
+        background-size: 100%;
+    }
+
+    .desc-content {
+        padding-left: 16px;
+    }
+}
