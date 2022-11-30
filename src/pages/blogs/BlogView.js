@@ -62,7 +62,8 @@ const BlogView = () => {
             title: '设计模式',
             tags: ["设计模式"],
             date: '2022-07-03'
-        })
+        }),
+        document.title = '设计模式';
     }, []);
 
     return (

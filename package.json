@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tangc",
@@ -12,6 +13,7 @@
   "dependencies": {
     "antd": "^4.24.0",
     "bootstrap": "^5.2.2",
+    "classnames": "^2.3.2",
     "markdown-navbar": "^1.4.3",
     "moment": "^2.29.4",
     "prop-types": "^15.8.1",

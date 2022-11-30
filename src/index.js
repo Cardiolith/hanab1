@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import RouterConfig from './router';
+
+const App = () => {
+    return <RouterConfig />;
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -67,6 +67,13 @@ module.exports = {
     devServer: {
         port: port,
         historyApiFallback: true,   // This section is for everyone who ran into this problem in development using webpack-dev-server.. Just as above, what we need to do it tell Webpack Dev Server to redirect all server requests to /index.html. There are just two properties in your webpack config you need to set to do this, publicPath and historyApiFallback.
+        proxy: {
+            '/api': {
+                target: "http://localhost:8097",
+                pathRewrite: { "/api": "" },
+                changeOrigin: true
+            }
+        }
     },
 
     plugins: [
